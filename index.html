@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Landing page</title>
+    <link rel="stylesheet" href="res/css/bootstrap.min.css">
+    <link rel="stylesheet" href="res/css/custom/main.css">
+    <script type="text/javascript" src="res/js/jquery-3.2.1.js"></script>
+    <script type="text/javascript" src="res/js/typed.min.js"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light navbar-custom">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="res/assets/brand/logo/base.svg" height="32px">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link link-custom-reg" href="#">Ser keeper</a>
+            <a class="nav-item nav-link link-custom-reg" href="#">Iniciar sesión</a>
+            <a class="nav-item nav-link link-custom-main" href="#">Solicitar un servicio</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="hero d-flex align-items-center justify-content-center">
+      <div class="container" style="margin-top: -150px;">
+        <div class="row" style="margin-bottom: 20px;">
+          <div class="col-sm" style="text-align: center;">
+            <h1 class="font-thin">Tu servicio de limpieza</h1>
+            <h1 class="font-black" id="typed"></h1>
+          </div>
+        </div>
+        <div class="row" style="margin-bottom: 20px;">
+          <div class="col-sm d-flex justify-content-center">
+            <button type="button" name="button" class="btn btn-cta">Solicita tu servicio ahora</button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm d-flex justify-content-center">
+            <img src="res/assets/img/stores/play.png" class="btn-store" alt="Google Play Store">
+            <img src="res/assets/img/stores/app.png" class="btn-store" alt="App Store iOS">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="custom-gradient-gray">
+
+      <div class="container press-logos d-flex justify-content-between align-content-center" style="height: 84px;">
+        <img src="res/assets/img/press-logo-reforma.png" style="width: 170px" alt="Periódico Reforma">
+        <img src="res/assets/img/press-logo-sony.png" style="width: 170px" alt="Canal Sony Televisión">
+        <img src="res/assets/img/press-logo-universal.png" style="width: 170px" alt="Periódico El Universal">
+        <img src="res/assets/img/press-logo-milenio.png" style="width: 170px" alt="Milenio Diario">
+        <img src="res/assets/img/press-logo-imagen.png" style="width: 170px" alt="Grupo Imagen Multimedia">
+        <img src="res/assets/img/press-logo-pulso.png" style="width: 170px" alt="Pulso Pyme">
+      </div>
+
+      <div class="container" style="padding: 30px 0px;">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="item-srv-container item-srv-perk" style="background-image:url('res/assets/img/home1.jpg');">
+              <div class="item-srv-perk-content d-flex align-items-center wrap">
+                <div>
+                  <h3 class="text-center">Tu hogar está protegido</h3>
+                  <p class="text-center">Tu hogar está asegurado por hasta un millon de pesos en todos tus servicios con nosotros.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="item-srv-container item-srv-perk" style="background-image:url('res/assets/img/mom.jpg');">
+              <div class="item-srv-perk-content d-flex align-items-center wrap">
+                <div>
+                  <h3 class="text-center">Sólo los mejores</h3>
+                  <p class="text-center">Los keepers son profesionales independientes que pasan por estrictos filtros de selección para asegurar la calidad y seguridad del servicio.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container" style="padding: 30px 0px;">
+        <h2 class="color-text-reg font-black">Lo que necesites, cuando lo necesitas.</h2>
+        <p>
+          <span class="color-text-disabled">Elige el tipo de servicio que requieras en tu hogar y agendalo para el día que quieras</span>
+          <b class="color-text-secondary">desde $77 por hora*</b>
+        </p>
+        <div class="row">
+          <div class="col-lg-4 center d-flex justify-content-center">
+            <div class="item-srv-container item-srv-clean color-text-white">
+              <span class="txt-body">Jelp Mi</span>
+              <h2 class="font-black">Clean</h2>
+              <p>
+                Servicio de limpieza general para que tu casa que impecable.
+              </p>
+              <div class="srv-img d-flex align-items-center justify-content-center">
+                <img src="res/assets/img/jelpmi-clean.png" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 center d-flex justify-content-center">
+            <div class="item-srv-container item-srv-laundry color-text-white">
+              <span class="txt-body">Jelp Mi</span>
+              <h2 class="font-black">Laundry</h2>
+              <p>
+                Lavandería en tu hogar, cuidaremos de todas tus prendas como a ti te gusta.
+              </p>
+              <div class="srv-img d-flex align-items-center justify-content-center">
+                <img src="res/assets/img/jelpmi-laundry.png" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 center d-flex justify-content-center">
+            <div class="item-srv-container item-srv-office color-text-white">
+              <span class="txt-body">Jelp Mi</span>
+              <h2 class="font-black">Office</h2>
+              <p>
+                Ya es tu segundo hogar, haz que se sienta como tal.
+              </p>
+              <div class="srv-img d-flex align-items-center justify-content-center">
+                <img src="res/assets/img/jelpmi-office.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="small color-text-disabled">
+          * Precio válido para servicios recurrentes agendados con por lo menos 24 horas de anticipación.
+        </p>
+      </div>
+    </div>
+
+    <div class="container" style="padding: 50px 0px 0px 0px;">
+      <div class="row">
+        <div class="col-lg-4">
+          <img src="res/assets/img/lulu.png" alt="Foto home keeper" style="width: 100%;">
+        </div>
+        <div class="col-lg-8">
+          <h2 class="color-text-reg font-black">Encuentra en quien confiar.</h2>
+          <br>
+          <p>
+            Los keepers pasan por un estricto proceso de selección que nos ayuda a mantener tu tranquilidad en todo momento y que tus servicios con nosotros sean lo mejor.
+          </p>
+          <p>
+            Tienen acceso a seguro de gastos médicos, miles de clientes en CDMX y Guadalajara, han multiplicado sus ingresos y trabajan todos los días para alcanzar sus metas.
+          </p>
+          <div class="d-flex justify-content-center" style="margin-top: 50px;">
+            <button type="button" name="button" class="btn btn-keeper">
+              Conviértete en Keeper <i class=""></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-custom">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <img src="res/assets/brand/logo/silver.svg" height="45px">
+          </div>
+        </div>
+        <div class="row" style="margin-top: 32px;">
+          <div class="col-lg-3">
+            <b class="color-text-disabled">Nosotros</b>
+            <br>
+            <a href="#">Inicio</a>
+            <br>
+            <a href="#">Ser keeper</a>
+            <br>
+            <a href="#">Características del servicio</a>
+            <br>
+            <a href="#">Prensa</a>
+          </div>
+          <div class="col-lg-3">
+            <b class="color-text-disabled">Legal</b>
+            <br>
+            <a href="#">Términos y condiciones</a>
+            <br>
+            <a href="#">Aviso de privacidad</a>
+          </div>
+          <div class="col-lg-3">
+            <b class="color-text-disabled">Contacto</b>
+            <br>
+            <a href="#">contacto@jelpmi.mx</a>
+            <br>
+            <a href="#">
+              <img src="res/assets/icons/facebook.svg" class="social-icon" alt="Facebook">
+            </a>
+            <a href="#">
+              <img src="res/assets/icons/twitter.svg" class="social-icon" alt="Twitter">
+            </a>
+            <a href="#">
+              <img src="res/assets/icons/instagram.svg" class="social-icon" alt="Instagram">
+            </a>
+            <a href="#">
+              <img src="res/assets/icons/linkedin.svg" class="social-icon" alt="Linkedin company page">
+            </a>
+          </div>
+          <div class="col-lg-3 text-right">
+            <img src="res/assets/img/stores/play.png" style="width:140px; margin-bottom: 16px;" alt="Google Play Store">
+            <img src="res/assets/img/stores/app.png" style="width:140px; margin-bottom: 16px;" alt="App Store iOS">
+            <p id="soul">
+              Hecho con <span>amor</span> en la
+              <br>
+              <b>Ciudad de México</b>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+      var typed = new Typed('#typed', {
+        strings: ['confiable', 'seguro', 'exprés', 'cool', 'rápido', 'honesto', 'ideal', "v* word"],
+        typeSpeed: 100,
+        backSpeed: 40,
+        backDelay: 1500,
+        smartBackspace: true, // this is a default
+        loop: true,
+        showCursor: false
+      });
+    </script>
+
+  </body>
+</html>
