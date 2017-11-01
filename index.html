@@ -7,16 +7,33 @@
     <link rel="stylesheet" href="res/css/custom/main.css">
     <script type="text/javascript" src="res/js/jquery-3.2.1.js"></script>
     <script type="text/javascript" src="res/js/typed.min.js"></script>
+    <script type="text/javascript" src="res/js/bootstrap.min.js"></script>
+
+    <!-- Start Alexa Certify Javascript -->
+    <script type="text/javascript">
+      _atrk_opts = { atrk_acct:"Jhx0p1IWhd10Y8", domain:"jelpmi.mx",dynamic: true};
+      (function() { var as = document.createElement('script'); as.type = 'text/javascript'; as.async = true; as.src = "https://d31qbv1cthcecs.cloudfront.net/atrk.js"; var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(as, s); })();
+    </script>
+    <noscript><img src="https://d5nxst8fruw4z.cloudfront.net/atrk.gif?account=Jhx0p1IWhd10Y8" style="display:none" height="1" width="1" alt="" /></noscript>
+    <!-- End Alexa Certify Javascript -->
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light navbar-custom">
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-light navbar-custom">
       <div class="container">
         <a class="navbar-brand" href="#">
-          <img src="res/assets/brand/logo/base.svg" height="32px">
+          <img src="res/assets/brand/logo/base.svg" height="32px" alt="Jelp Mi Logo">
         </a>
+
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
+
+        <!--
+        <div class="menu-btn" style="">
+          <img src="res/assets/icons/chevron.svg" alt="">
+        </div>
+      -->
+
         <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
           <div class="navbar-nav">
             <a class="nav-item nav-link link-custom-reg" href="#">Ser keeper</a>
@@ -51,7 +68,7 @@
 
     <div class="custom-gradient-gray">
 
-      <div class="container press-logos d-flex justify-content-between align-content-center" style="height: 84px;">
+      <div id="press-logos" class="container press-logos d-flex justify-content-between align-content-center" style="height: 84px;">
         <img src="res/assets/img/press-logo-reforma.png" style="width: 170px" alt="Periódico Reforma">
         <img src="res/assets/img/press-logo-sony.png" style="width: 170px" alt="Canal Sony Televisión">
         <img src="res/assets/img/press-logo-universal.png" style="width: 170px" alt="Periódico El Universal">
@@ -67,7 +84,9 @@
               <div class="item-srv-perk-content d-flex align-items-center wrap">
                 <div>
                   <h3 class="text-center">Tu hogar está protegido</h3>
-                  <p class="text-center">Tu hogar está asegurado por hasta un millon de pesos en todos tus servicios con nosotros.</p>
+                  <p class="text-center">
+                    Tu hogar está asegurado por hasta un millon de pesos en todos tus servicios con nosotros.
+                  </p>
                 </div>
               </div>
             </div>
@@ -135,12 +154,12 @@
       </div>
     </div>
 
-    <div class="container" style="padding: 50px 0px 0px 0px;">
-      <div class="row">
-        <div class="col-lg-4">
+    <div class="container">
+      <div class="row" style="margin-top: 60px;">
+        <div class="col-sm-4">
           <img src="res/assets/img/lulu.png" alt="Foto home keeper" style="width: 100%;">
         </div>
-        <div class="col-lg-8">
+        <div class="col-sm-8">
           <h2 class="color-text-reg font-black">Encuentra en quien confiar.</h2>
           <br>
           <p>
@@ -149,9 +168,9 @@
           <p>
             Tienen acceso a seguro de gastos médicos, miles de clientes en CDMX y Guadalajara, han multiplicado sus ingresos y trabajan todos los días para alcanzar sus metas.
           </p>
-          <div class="d-flex justify-content-center" style="margin-top: 50px;">
+          <div class="d-flex justify-content-center" >
             <button type="button" name="button" class="btn btn-keeper">
-              Conviértete en Keeper <i class=""></i>
+              Conviértete en Keeper
             </button>
           </div>
         </div>
@@ -162,7 +181,7 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-12">
-            <img src="res/assets/brand/logo/silver.svg" height="45px">
+            <img src="res/assets/brand/logo/silver.svg" height="45px" alt="Jelp Mi Logo">
           </div>
         </div>
         <div class="row" style="margin-top: 32px;">
@@ -217,13 +236,25 @@
 
     <script type="text/javascript">
       var typed = new Typed('#typed', {
-        strings: ['confiable', 'seguro', 'exprés', 'cool', 'rápido', 'honesto', 'ideal', "v* word"],
+        strings: ['confiable', 'seguro', 'exprés', 'cool', 'rápido', 'honesto', 'ideal', 'v* word', 'moderno'],
         typeSpeed: 100,
         backSpeed: 40,
         backDelay: 1500,
         smartBackspace: true, // this is a default
         loop: true,
         showCursor: false
+      });
+    </script>
+
+    <script type="text/javascript">
+      $(window).scroll(function() {
+        var scroll = $(window).scrollTop();
+        if (scroll >= 80) {
+          $("#navbar").addClass("navbar-scrolled");
+          console.log("Hola");
+        }else {
+          $("#navbar").removeClass("navbar-scrolled");
+        }
       });
     </script>
 
