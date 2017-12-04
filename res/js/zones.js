@@ -27,7 +27,6 @@ function build(city, array){
 
   for (var i = 0; i < array.length; i++) {
     if (columnCount == 0) {
-      console.log(array[i]);
       contentColumn += "<div class='col-md-4'>" + array[i] + "<br>";
       columnCount = columnCount + 1;
     } else if(columnCount < columnSize){
@@ -41,6 +40,5 @@ function build(city, array){
 
   contentColumn += "</div>"
 
-  console.log(columnSize);
   document.getElementById('cities').innerHTML += contentColumn;
 }
