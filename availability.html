@@ -2,15 +2,18 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>jelpmi! - Trabaja por tu cuenta</title>
+    <title>jelpmi! - Cobertura</title>
     <link rel="shortcut icon" type="image/png" href="res/assets/icons/favicon.png"/>
 
     <link rel="stylesheet" href="res/css/bootstrap.min.css">
     <link rel="stylesheet" href="res/css/custom/main.css">
     <link rel="stylesheet" href="res/css/custom/sections.css">
+
     <script type="text/javascript" src="res/js/jquery-3.2.1.js"></script>
     <script type="text/javascript" src="res/js/typed.min.js"></script>
     <script type="text/javascript" src="res/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/js/json/zones.json"></script>
+    <script type="text/javascript" src="res/js/zones.js"></script>
 
     <!-- Start Alexa Certify Javascript -->
     <script type="text/javascript">
@@ -20,7 +23,8 @@
     <noscript><img src="https://d5nxst8fruw4z.cloudfront.net/atrk.gif?account=Jhx0p1IWhd10Y8" style="display:none" height="1" width="1" alt="" /></noscript>
     <!-- End Alexa Certify Javascript -->
   </head>
-  <body>
+
+  <body onload="sort()">
 
     <nav id="navbar" class="navbar navbar-expand-lg navbar-light navbar-custom">
       <div class="container">
@@ -46,10 +50,10 @@
       <div class="container">
         <div class="row d-flex align-items-center justify-content-center">
           <div class="col-sm-4">
-            <img src="res/assets/img/gloves.png" alt="Trabajo doméstico" style="width: 100%;">
+            <img src="res/assets/img/compass.png" alt="Cobertura del servicio" style="width: 100%;">
           </div>
           <div class="col-sm-8">
-            <h2 class="font-black">Sé tu propio jefe.</h2>
+            <h2 class="font-black">Estamos cerca de ti.</h2>
             <p class="color-text-disabled">
               Sé dueño de tu tiempo, trabaja cuando y donde quieras, te apoyamos a encontrar clientes y a que tus cobros sean justos.
             </p>
@@ -58,192 +62,23 @@
       </div>
     </div>
 
-    <div class="container" style="margin-bottom: 66px; padding: 0px;">
-      <div class="row">
-        <div class="col-sm">
-          <div class="bullet-big" style="background-color: #30AAF9;">
-            1
-          </div>
-          <br>
-          <h3 class="font-black">Regístrate</h3>
-          <p>
-            Realiza tu proceso de admisión y entrega la documentación necesaria.
-          </p>
-        </div>
-        <div class="col-sm">
-          <div class="bullet-big" style="background-color: #F223C6;">
-            2
-          </div>
-          <br>
-          <h3 class="font-black">Elige</h3>
-          <p>
-            Entre miles de servicios en CMDX y Guadalajara los que más te convengan.
-          </p>
-        </div>
-        <div class="col-sm">
-          <div class="bullet-big" style="background-color: #9032C8;">
-            3
-          </div>
-          <br>
-          <h3 class="font-black">Trabaja</h3>
-          <p>
-            Con la seguridad de contar con nuestro apoyo y certeza en los cobros.
-          </p>
-        </div>
-      </div>
+    <div class="container" id="cities">
     </div>
 
-    <div style="background-image: url('res/assets/img/mom-keeper.jpg'); height: 500px;" class="d-flex align-items-center color-text-white">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-7">
-            <!--empty div-->
-          </div>
-          <div class="col-sm-5">
-            <h2 class="font-black">Beneficios.</h2>
-            <p>
-              Acceso a miles de clientes en CDMX y Guadalajara.
-              <br>
-              Pago por hora en cada uno de tus servicios.
-              <br>
-              Depositos semanales en tu cuenta bancaria.
-              <br>
-              Seguro de gastos médicos mayores.
-              <br>
-              Horarios y zonas de trabajo flexibles.
-              <br>
-              Ingreso hasta 5 veces mayor que en agencias.
-              <br>
-              Seguro de responsabilidad civil en tus servicios.
-              <br>
-              Trato digno.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div style="background: #312D37">
-      <div class="container" style="padding: 66px 0px;">
-        <div class="row" style="padding: 0px 15px; margin-bottom: 33px;">
-          <h2 class="font-black color-text-white">
-            Cambia tu vida trabajando a tu ritmo.
-          </h2>
-          <p class="color-text-white">
-            Ellxs son algunxs de las personas que ya están cambiando su vida y la de su familia, prestando sus servicios a través de jelpmi.mx
-          </p>
-        </div>
-        <div class="row">
-          <div class="col-lg">
-            <div class="item-container container-quote" style="background: white;" >
-              <div class="container-quote-photo">
-                <img src="res/assets/img/photos/CatalinaMiranda.jpg" alt="">
-              </div>
-              <div class="container-quote-text">
-                <p class="color-text-disabled">El mes pasado pude celebrarle a mi hija con un pastel por primera vez.</p>
-                <h4 class="font-black">Catalina Miranda</h4>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg">
-            <div class="item-container container-quote" style="background: white;" >
-              <div class="container-quote-photo">
-                <img src="res/assets/img/photos/AnayeliMtz.jpg" alt="">
-              </div>
-              <div class="container-quote-text">
-                <p class="color-text-disabled">La flexibilidad me ayuda a combinar el trabajo con la escuela y cubrir mis gastos de la carrera.</p>
-                <h4 class="font-black">Anayeli Martínez</h4>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg">
-            <div class="item-container container-quote" style="background: white;" >
-              <div class="container-quote-photo">
-                <img src="res/assets/img/photos/MauricioPerez.jpg" alt="">
-              </div>
-              <div class="container-quote-text">
-                <p class="color-text-disabled">Gracias a los servicios de la plataforma, pude llevar a mi familia de vacaciones a Cancún.</p>
-                <h4 class="font-black">Mauricio Pérez</h4>
-              </div>
-            </div>
-          </div>
-        </div>
-        <br>
-        <p class="color-text-white"> * Historias 100% real no fake.</p>
-      </div>
-    </div>
-
-    <div style="padding: 66px 0px;">
-      <div class="container">
-        <div class="row" style="margin-bottom: 33px;">
-          <h2 class="font-black"s>
-            Requisitos para entrar.
-          </h2>
-          <p class="color-text-disabled">
-            El proceso de ingreso a la plataforma es fácil y rápido, siguiendo el proceso podrías comenzar a prestar servicios en cuestión de días.
-          </p>
-        </div>
-        <div class="row">
-          <div class="col-lg" style="padding: 0px;">
-            <h3 class="font-black">Certificación de seguridad.</h3>
-            <p class="color-text-disabled">
-              Si planeas prestar tus servicios, completa la certificación de seguridad en los centros de atencion de Jelp Mi en tu ciudad. Consta de un examen psicométrico y una revisión de tus antecedentes penales.
-              <br><br>
-              Esta certificación <b>NO tiene ningún costo</b> y nos ayuda a garantizar la seguridad para ti y tus clientes.
-            </p>
-          </div>
-          <div class="col-lg">
-            <h3 class="font-black">Documentos personales.</h3>
-            <ul class="color-text-disabled">
-              <li>Acta de nacimiento.</li>
-              <li>Comprobante de domicilio (No mayor a 3 meses).</li>
-              <li>Identificación oficial.</li>
-              <li>Carta de antecedentes penales o carta policia.</li>
-              <li>Dos fotografías infantiles.</li>
-              <li>Dos cartas de recomendación.</li>
-              <li>Cuenta bancaria (Para recibir tus pagos).</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="container" style="padding: 15px 0px 66px 0px;">
+    <div class="container">
       <div class="row" style="padding: 0px 15px;">
         <h2 class="font-black"s>
-          Únete ahora.
+          ¿No encuentras tu ciudad?
         </h2>
         <p class="color-text-disabled">
-          En Jelp Mi siempre estamos buscando personas interesadas en prestar sus servicios mediante la plataforma.  Inicia tu registro en linea o agenda una entrevista llamando al número de tu ciudad.
+          Sólo déjanos tus datos y cuando jelpmi llegue a donde estás, serás uno de los primeros en enterarte y tu primer servicio corre por nuestra cuenta. ¡Qué esperas!
         </p>
       </div>
-      <div class="row" style="padding: 0px;">
-        <div class="col-lg">
-          <div class="item-container item-srv-office d-flex align-items-center justify-content-center color-text-white" style="width: 100%; height: 200px;">
-            <div class="text-center">
-              <h3>Regístrate en linea</h3>
-              <img src="res/assets/img/link.png" alt="Regístrate ahora" style="width: 60px;">
-            </div>
-          </div>
-        </div>
-        <div class="col-lg">
-          <div class="item-container d-flex align-items-center justify-content-center color-text-white" style="width: 100%; height: 200px; background-image: url('res/assets/img/cdmx.jpg'); background-size: cover;">
-            <div class="text-center">
-              <h2 class="font-black">CDMX</h2>
-              <h2 class="font-thin">7098 2559</h2>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg">
-          <div class="item-container d-flex align-items-center justify-content-center color-text-white" style="width: 100%; height: 200px; background-image: url('res/assets/img/gdl.jpg'); background-size: cover;">
-            <div class="text-center">
-              <h2 class="font-black">Guadalajara</h2>
-              <h2 class="font-thin">33 2343 6162</h2>
-            </div>
-          </div>
-        </div>
+      <div class="row" style="padding: 0px; margin-bottom: 67px;">
+
       </div>
     </div>
+
 
     <div class="footer-custom">
       <div class="container">
@@ -303,23 +138,10 @@
     </div>
 
     <script type="text/javascript">
-      var typed = new Typed('#typed', {
-        strings: ['confiable', 'seguro', 'exprés', 'cool', 'rápido', 'honesto', 'ideal', 'chido', 'moderno'],
-        typeSpeed: 100,
-        backSpeed: 40,
-        backDelay: 1500,
-        smartBackspace: true, // this is a default
-        loop: true,
-        showCursor: false
-      });
-    </script>
-
-    <script type="text/javascript">
       $(window).scroll(function() {
         var scroll = $(window).scrollTop();
         if (scroll >= 80) {
           $("#navbar").addClass("navbar-scrolled");
-          console.log("Hola");
         }else {
           $("#navbar").removeClass("navbar-scrolled");
         }
