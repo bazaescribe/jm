@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="29px" height="29px" viewBox="0 0 29 29" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>Facebook</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="footer/desktop_light" transform="translate(-650.000000, -188.000000)" fill="#C5C3C7">
+            <g id="Stacked-Group-2-Copy-2" transform="translate(650.000000, 113.000000)">
+                <g id="Stacked-Group" transform="translate(0.000000, 74.000000)">
+                    <path d="M29,28.3988069 C29,29.2827413 28.2835118,30 27.3995533,30 L20.0095339,30 L20.0095339,18.7695304 L23.7791942,18.7695304 L24.3440113,14.3933046 L20.0095339,14.3933046 L20.0095339,11.5985236 C20.0095339,10.331472 20.3618534,9.46807583 22.1787475,9.46807583 L24.4964724,9.4672859 L24.4964724,5.55238069 C24.0951758,5.49945522 22.719866,5.38017542 21.1194192,5.38017542 C17.777914,5.38017542 15.4902073,7.419781 15.4902073,11.1656407 L15.4902073,14.3933046 L11.7110675,14.3933046 L11.7110675,18.7695304 L15.4902073,18.7695304 L15.4902073,30 L1.60044673,30 C0.716488246,30 0,29.2827413 0,28.3988069 L0,2.60119307 C0,1.71646873 0.716488246,1 1.60044673,1 L27.3995533,1 C28.2835118,1 29,1.71646873 29,2.60119307 L29,28.3988069" id="Facebook"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
