@@ -2,15 +2,18 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>jelpmi! - Trabaja por tu cuenta</title>
+    <title>jelpmi! - Servicios de oficina</title>
     <link rel="shortcut icon" type="image/png" href="res/assets/icons/favicon.png"/>
 
     <link rel="stylesheet" href="res/css/bootstrap.min.css">
     <link rel="stylesheet" href="res/css/custom/main.css">
     <link rel="stylesheet" href="res/css/custom/sections.css">
+
     <script type="text/javascript" src="res/js/jquery-3.2.1.js"></script>
     <script type="text/javascript" src="res/js/typed.min.js"></script>
     <script type="text/javascript" src="res/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/js/json/zones.json"></script>
+    <script type="text/javascript" src="res/js/zones.js"></script>
 
     <!-- Start Alexa Certify Javascript -->
     <script type="text/javascript">
@@ -20,7 +23,8 @@
     <noscript><img src="https://d5nxst8fruw4z.cloudfront.net/atrk.gif?account=Jhx0p1IWhd10Y8" style="display:none" height="1" width="1" alt="" /></noscript>
     <!-- End Alexa Certify Javascript -->
   </head>
-  <body>
+
+  <body onload="sort()">
 
     <nav id="navbar" class="navbar navbar-expand-lg navbar-light navbar-custom">
       <div class="container">
@@ -46,98 +50,59 @@
       <div class="container">
         <div class="row d-flex align-items-center justify-content-center">
           <div class="col-sm-4">
-            <img src="res/assets/img/keys.png" alt="Beneficios de usar jelpmi" style="width: 100%;">
+            <img src="res/assets/img/items/office.jpg" alt="Servicios de oficina" style="width: 100%;">
           </div>
           <div class="col-sm-8">
-            <h2 class="font-black">Mucho más que limpiar tu casa...</h2>
+            <h2 class="font-black">Tu oficina quedará impecable.</h2>
             <p class="color-text-disabled">
-              ¡Conoce todos los beneficios con los cuales cuentas al momento de solicitar
-              <br>
-              tus servicios por medio de Jelp mi!
+              Sé dueño de tu tiempo, trabaja cuando y donde quieras, te apoyamos a encontrar clientes y a que tus cobros sean justos.
             </p>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="container">
-      <div class="row" style="margin-bottom: 15px;">
-        <div class="col-md" style="background: #fafafa; margin: 12px; height: 350px; overflow: hidden;">
-          <div style="padding: 26px;">
-            <h2 class="font-black">Seguridad.</h2>
-            <p>
-              Con los procesos de selección más rigurosos de la industria, sólo el 20% de los aplicantes son aceptados para prestar sus servicios en Jelp Mi!
-            </p>
-          </div>
-          <div class="text-center">
-            <img src="res/assets/img/items/colors.png" alt="" style="width: 80%;">
-          </div>
-        </div>
-        <div class="col-md" style="background: #fafafa; margin: 12px; height: 350px; overflow: hidden;">
-          <div style="padding: 26px;">
-            <h2 class="font-black">Tranquilidad.</h2>
-            <p>
-              Al solicitar servicios por medio de Jelp mi, tu domicilio está asegurado, en caso de accidentes o daños a la propiedad, hasta por un millón de pesos.
-            </p>
-          </div>
-          <div class="text-center">
-            <img src="res/assets/img/items/safelock.png" alt="" style="width: 80%;">
-          </div>
-        </div>
-      </div>
-      <div class="row d-flex align-items-center" style="margin-bottom: 14px;">
-        <div class="col-md-6 d-flex align-items-center" style="padding: 50px; height: 350px;">
-          <div class="">
-            <h2 class="font-black">Cerca de ti.</h2>
-            <p>
-              Gracias al gran éxito, estamos en constante expansión hacia nuevas zonas y estados.
-              <br><br>
-              ¡Muy pronto llegaremos a toda la República!
-            </p>
-            <a href="#">Ver zonas con disponibilidad.</a>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <img src="res/assets/img/items/mapa.jpg" style="width:100%;" alt="">
-        </div>
-      </div>
-    </div>
-
-    <div style="background-image: url('res/assets/img/office.jpg'); height: 500px;" class="d-flex align-items-center color-text-white">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-6">
-            <!--empty div-->
-          </div>
-          <div class="col-sm-6">
-            <h2 class="font-black">Servicio para oficinas.</h2>
-            <p>
-              ¿Aún no lo has contratado?
-              <br><br>
-              Ten acceso a diferentes promociones tales como Healthy Snacks, descuentos y más...
-            </p>
-            <button type="button" name="button" class="btn btn-alt" style="width: 200px;"> Ver más </button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div style="background: #F223C6">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 text-white d-flex align-items-center">
-            <div class="">
-              <h2 class="font-black">Ayuda a cambiar vidas.</h2>
-              <p>
-                Los keepers son profesionales independientes de la limpieza que han logrado cambiar su vida y la de sus familias prestando sus servicios en plataforma.
+    <div class="container-fluid" style="background: #f0f0f0;">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="testimonial d-flex align-items-center justify-content-center">
+            <div class="logo" style="width: 300px;">
+              <img src="res/assets/img/logos/logo-greenpeace.png" style="width: 100%;" alt="Greenpeace México">
+            </div>
+            <div class="history color-text-disabled" style="padding: 66px;">
+              <p style="font-size: 22px;">
+                Estamos encantados con el servicio de JelpMi y
                 <br>
-                ¡Conócelos al solicitar un servicio!
+                la limpieza ya nunca es una preocupación.
+              </p>
+              <p>
+                Gabriela Zamora
+                <br>
+                <span class="name-testimonial font-black">
+                  Facilities
+                </span>
               </p>
             </div>
           </div>
-          <div class="col-md-6 text-white d-flex align-items-end justify-content-center" style="height: 500px;">
-            <img src="res/assets/img/items/keeper.png" style="width: 70%;" alt="">
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-6 d-flex align-items-center justify-content-center">
+          <div>
+            <h2 class="font-black">Pruébalo ahora</h2>
+            <p>
+              Solicita el servicio por todos los días que lo requieras
+              <br>
+              en tu oficina y recibe los beneficios.
+            </p>
+            <button type="button" name="button" class="btn btn-main" style="width: 260px;">Cotizar mi servicio</button>
           </div>
+        </div>
+        <div class="col-md-6" style="background-image: url('res/assets/img/office-2.jpg'); height: 422px;">
+          <!-- empty div -->
         </div>
       </div>
     </div>
@@ -200,23 +165,10 @@
     </div>
 
     <script type="text/javascript">
-      var typed = new Typed('#typed', {
-        strings: ['confiable', 'seguro', 'exprés', 'cool', 'rápido', 'honesto', 'ideal', 'chido', 'moderno'],
-        typeSpeed: 100,
-        backSpeed: 40,
-        backDelay: 1500,
-        smartBackspace: true, // this is a default
-        loop: true,
-        showCursor: false
-      });
-    </script>
-
-    <script type="text/javascript">
       $(window).scroll(function() {
         var scroll = $(window).scrollTop();
         if (scroll >= 80) {
           $("#navbar").addClass("navbar-scrolled");
-          console.log("Hola");
         }else {
           $("#navbar").removeClass("navbar-scrolled");
         }

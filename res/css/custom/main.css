@@ -166,6 +166,14 @@ p{
   outline:0;
 }
 
+.btn-main{
+  background-color: #9032C8;
+  color: white;
+  border-radius: 0px !important;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.15);
+  padding: 10px;
+}
+
 .btn-alt{
   background-color: #F223C6;
   color: white;
