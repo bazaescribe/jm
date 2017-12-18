@@ -3,6 +3,7 @@
 
 body{
   font-family: "Roboto", sans-serif !important;
+  color: #120B17;
 }
 
 h1{
@@ -115,7 +116,7 @@ p{
 }
 
 .footer-custom{
-  background-color: #fafafa;
+  background-color: #f0f0f0;
   border-top: 1px solid #F0F0F0;
   padding: 36px 0px;
   line-height: 36px;
@@ -320,6 +321,8 @@ input[type="text"]:focus{
   width: 80%;
 }
 
+/* *********  Colors and gradients */
+
 .gradient-purple{
   background-image: radial-gradient(circle at 50% 0, #c360e6, #9032c8);
 }
@@ -330,6 +333,46 @@ input[type="text"]:focus{
 
 .gradient-pink{
   background-image: radial-gradient(circle at 50% 0, #fa49e5, #f323c6);
+}
+
+.solid-100{
+  background: #120B17;
+}
+
+.solid-85{
+  background: #312D37;
+}
+
+.solid-70{
+  background: #5D5A60;
+}
+
+.solid-55{
+  background: #8E8B91;
+}
+
+.solid-40{
+  background: #C5C3C7;
+}
+
+.solid-25{
+  background: #F0F0F0;
+}
+
+.solid-10{
+  background: #FAFAFA;
+}
+
+.solid-brand{
+  background: #9032C8;
+}
+
+.solid-accent{
+  background: #F323C6;
+}
+
+.solid-accent-alt{
+  background: #486EFC;
 }
 
 .item-keeper-story-photo{
