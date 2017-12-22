@@ -149,6 +149,8 @@ p{
 .hero{
   background-image: url('../../../res/assets/img/header.png');
   height: 750px;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .btn-cta{
