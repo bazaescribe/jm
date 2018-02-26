@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900');
 @import url('https://fonts.googleapis.com/css?family=Caveat+Brush|Gochi+Hand|Permanent+Marker');
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+
+::selection {
+  background: #D9ACF3; /* WebKit/Blink Browsers */
+  color: white;
+}
+::-moz-selection {
+  background: #D9ACF3; /* Gecko Browsers */
+  color: white
+}
 
 body{
   font-family: "Roboto", sans-serif !important;
@@ -24,6 +34,11 @@ h4{
 
 p{
   font-size: 16px;
+}
+
+span{
+  color: #F223C6;
+  font-weight: bold;
 }
 
 .color-text-reg{
@@ -91,6 +106,9 @@ p{
     color: #FFFFFF;
     background-color: rgba(255, 255, 255, 1);
     transition: all 0.99s ease-in-out;
+    /* background: yellow; */
+    height: 50px;
+    padding: 0px !important;
 }
 
 .navbar-scrolled{
@@ -128,22 +146,32 @@ p{
 }
 
 .link-custom-reg{
-  color: rgba(18, 11, 23, 1) !important;
-  border-bottom: 2px solid white;
+  color: rgba(18, 11, 23, 0.6) !important;
+  background: white;
   margin: 0px 5px;
 }
 
 .link-custom-reg:hover{
-  border-bottom: 2px solid rgba(18, 11, 23, 0.8);
+  background: rgba(18, 11, 23, 0.7);
+  color: white !important;
 }
 
-.link-custom-main{
+.link-custom-pink{
   color: rgba(242, 35, 198, 1) !important;
-  border-bottom: 2px solid white;
 }
 
-.link-custom-main:hover{
-  border-bottom: 2px solid rgba(242, 35, 198, 1);
+.link-custom-pink:hover{
+  background: rgba(242, 35, 198, 0.7) !important;
+  color: white !important;
+}
+
+.link-custom-purple{
+  color: rgba(173, 35, 255, 1) !important;
+}
+
+.link-custom-purple:hover{
+  background: rgba(144, 50, 200, 0.7) !important;
+  color: white !important;
 }
 
 .hero{
@@ -151,21 +179,37 @@ p{
   height: 750px;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
 .btn-cta{
-  background-color: rgba(144, 50, 200, 1);
   color: white;
-  font-size: 22px;
-  border-radius: 0px !important;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
-  padding: 15px 80px;
-  transition: background-color 1s ease;
+  font-size: 16px;
+  border: 0px solid lime;
+  border-radius: 50px !important;
+  box-shadow: 0px 0px 0px white;
+  transition: box-shadow 0.2s ease;
+  height: 45px;
+  padding: 4px 28px;
+  margin-right: 20px;
 }
 
-.btn-cta:hover{
-  background-color: rgba(124, 15, 189, 1);
-  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.3);
+.bg-purple{
+  background-color: rgba(144, 50, 200, 1);
+}
+
+.bg-purple:hover{
+  background-color: rgba(173, 35, 255, 1);
+  box-shadow: 0px 0px 12px rgba(173, 35, 255, 0.7);
+}
+
+.bg-pink{
+  background-color: rgba(242, 35, 198, 1);
+}
+
+.bg-pink:hover{
+  background-color: rgba(255, 8, 244, 1);
+  box-shadow: 0px 0px 12px rgba(255, 8, 244, 0.7);
 }
 
 .btn-cta:focus{
@@ -247,6 +291,11 @@ input[type="text"]:focus{
 .custom-transparent{
   height: 293px;
 	background-image: linear-gradient(0deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.9));
+}
+
+.overlay{
+  height: 100%;
+	background-image: radial-gradient(circle at 90% bottom, rgba(48, 170, 249, 0.5), rgba(242,35,198, 0.6), rgba(144, 50, 200, 0.7));
 }
 
 .item-perks{
@@ -431,6 +480,10 @@ input[type="text"]:focus{
   font-size: 36px;
 }
 
+.padding-0{
+  padding: 0px !important;
+}
+
 .padding-5{
   padding: 5px;
 }
@@ -443,11 +496,15 @@ input[type="text"]:focus{
   padding: 15px;
 }
 
+.margin-0{
+  margin: 0px !important;
+}
+
 
 #typed{
   height: 100px !important;
-  font-family: 'Gochi hand' !important;
-  font-size: 80px;
+  font-family: 'Pacifico' !important;
+  font-size: 70px;
 }
 
 #soul{

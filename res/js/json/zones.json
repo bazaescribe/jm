@@ -10,7 +10,6 @@ zones= [
   { "id":"0009","city":"CDMX","name":"Cuajimalpa","status":"ON"},
   { "id":"0010","city":"CDMX","name":"Cuauhtémoc","status":"ON"},
   { "id":"0011","city":"CDMX","name":"Cuautitlán","status":"ON"},
-  { "id":"0012","city":"CDMX","name":"Cuautitlán Izcalli","status":"ON"},
   { "id":"0013","city":"CDMX","name":"Ecatepec de Morelos","status":"ON"},
   { "id":"0014","city":"CDMX","name":"Gustavo A. Madero","status":"ON"},
   { "id":"0015","city":"CDMX","name":"Huixquilucan","status":"ON"},
