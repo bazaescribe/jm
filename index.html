@@ -22,22 +22,29 @@
   </head>
 
   <body>
-    <nav id="navbar" class="navbar navbar-expand-lg navbar-light navbar-custom">
+
+    <!-- Navigation bar -->
+    <nav class="navbar navbar-light bg-light fixed-top" style="background: #fff !important; height: 50px;" id="navbar">
       <div class="container">
         <a class="navbar-brand" href="index.html">
           <img src="res/assets/brand/logo/base.svg" height="32px" alt="Jelp Mi Logo">
         </a>
-
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-item nav-link link-custom-reg" href="keepers.html">Iniciar sesión</a>
-            <a class="nav-item nav-link link-custom-pink" href="#">Quiero trabajar</a>
-            <a class="nav-item nav-link link-custom-purple" href="#">Quiero un servicio</a>
-          </div>
+        <div class="menu justify-content-end" style="height: 49px;">
+          <a href="#">
+            <div class="menu-item">
+              Iniciar sesión
+            </div>
+          </a>
+          <a href="keepers.html">
+            <div class="menu-item">
+              Quiero trabajar
+            </div>
+          </a>
+          <a href="#">
+            <div class="menu-item">
+              Quiero un servicio
+            </div>
+          </a>
         </div>
       </div>
     </nav>
@@ -52,7 +59,9 @@
         </div>
         <div class="row" style="margin-bottom: 20px;">
           <div class="col-sm d-flex justify-content-center">
-            <button type="button" name="button" class="btn btn-cta bg-pink">Quiero trabajar</button>
+            <a href="keepers.html">
+              <button type="button" name="button" class="btn btn-cta bg-pink">Quiero trabajar</button>
+            </a>
             <button type="button" name="button" class="btn btn-cta bg-purple">Quiero un servicio</button>
           </div>
         </div>
@@ -119,7 +128,7 @@
       <div class="container" style="background: white;">
         <div class="row">
           <div class="col-lg-6 d-flex justify-content-center align-items-center" style="height: 100vh; margin: 38px 0px;">
-            <img src="res/assets/img/services.png" alt="" style="width: 75%;">
+            <img src="res/assets/img/services.png" class="wow fadeInUp" alt="Type of services" style="width: 75%;">
           </div>
           <div class="col-lg-6 d-flex justify-content-center align-items-center" style="">
             <div style="width: 85%;" class="wow fadeIn">
@@ -250,21 +259,21 @@
           animateClass: 'animated',
           offset:       100,
           callback:     function(box) {
-            console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+            //console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
           }
         }
       );
       wow.init();
-      document.getElementById('moar').onclick = function() {
-        var section = document.createElement('section');
-        section.className = 'section--purple wow fadeInDown';
-        this.parentNode.insertBefore(section, this);
-      };
+      // document.getElementById('moar').onclick = function() {
+      //   var section = document.createElement('section');
+      //   section.className = 'section--purple wow fadeInDown';
+      //   this.parentNode.insertBefore(section, this);
+      // };
     </script>
 
     <script type="text/javascript">
       var typed = new Typed('#typed', {
-        strings: ['confiable', 'seguro', 'exprés', 'cool', 'rápido', 'honesto', 'ideal', 'chido', 'moderno', 'buen ped*'],
+        strings: ['confiable', 'seguro', 'exprés', 'cool', 'rápido', 'honesto', 'ideal', 'chido', 'moderno'],
         typeSpeed: 100,
         backSpeed: 40,
         backDelay: 1500,
@@ -279,7 +288,6 @@
         var scroll = $(window).scrollTop();
         if (scroll >= 80) {
           $("#navbar").addClass("navbar-scrolled");
-          console.log("Hola");
         }else {
           $("#navbar").removeClass("navbar-scrolled");
         }
