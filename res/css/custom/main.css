@@ -777,6 +777,12 @@ label{
 		height: 0px;
 	}
 
+.keeper-cover{
+	background: grey;
+	background-image: url('../../assets/img/photos/cover/keeper.jpg');
+	background-size: cover !important; 
+}
+
 @media only screen and (max-width: 550px){
 	.hero{
 		background-size: 270%;
@@ -816,6 +822,10 @@ label{
 		display: none;
 	}
 	
+	.keepers-hero{
+		background-size: cover !important; 
+	}
+	
 	.section-hero{
 		height: 100vh;
 		margin-bottom: 50px;
@@ -839,6 +849,7 @@ label{
 		-ms-transform: skewY(10deg); /* IE 9 */
     -webkit-transform: skewY(10deg); /* Safari 3-8 */
     transform: skewY(10deg);
+		width: 100%;
 	}
 	
 	#cities{
@@ -851,6 +862,11 @@ label{
 	
 	.hero-us h1{
 		font-size: 36px;
+	}
+	
+	.keeper-cover{
+		background-image: url('../../assets/img/photos/cover/keeper-mobile.jpg');
+		background-size: contain;
 	}
 }
 
@@ -872,6 +888,10 @@ label{
   #contact-info{
     display: none;
   }
+	
+	.keepers-hero{
+		background-position: -300px -100px !important;
+	}
 }
 
 @media only screen and (max-width: 991px) {
