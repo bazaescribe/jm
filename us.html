@@ -2,6 +2,8 @@
 <html>
   <head>
     <meta charset="utf-8">
+		<meta id="viewport" name="viewport" content ="width=device-width" />
+    <meta name="theme-color" content="#f0f0f0" />
     <title>jelpmi! - Cobertura</title>
     <link rel="shortcut icon" type="image/png" href="res/assets/icons/favicon.png"/>
 
@@ -26,12 +28,63 @@
 
   <body onload="sort()">
 
+    <!-- Mobile Menu -->
+		<nav class="navbar fixed-top container space-between navbar-mobile d-flex align-items-start" id="navbar-mobile">
+      <div class="d-flex justify-content-between align-items-center" style="width: 100%; display: flex">
+        <div id="burger-mobile" onclick="menu()">
+          <img src="res/assets/icons/menu.svg" alt="Burger menu" style="width: 40px;" id="burger-btn">
+          <img src="res/assets/brand/logo/globo.svg" height="32px" alt="Jelp Mi Logo" id="globo" class="svg logo-img">
+					<img src="res/assets/brand/logo/globo-w.svg" height="32px" alt="Jelp Mi Logo" id="globo-w" class="svg logo-img non-visible">
+        </div>
+        <div id="cta-mobile">
+					<a href="http://servicios.jelpmi.mx">
+						<img src="res/assets/icons/service.svg" height="32px;" id="cta-icon">
+					</a>
+        </div>
+      </div>
+      <div class="non-visible" id="menu-list" style="width: 100%;">
+        <div class="menu-item-main">
+					Iniciar sesión
+				</div>
+				<div class="menu-item-main" style="border-right: 3px solid #F223C6;">
+					<a href="keepers.html">Quiero trabajar</a>
+				</div>
+				<div class="menu-item-main" style="border-right: 3px solid #9032c8;">
+					Quiero un servicio
+				</div>
+				
+				<br>
+        <hr style="width: 100%; margin: 48px 0px;">
+				<br>
+				
+        <div class="menu-item-secondary">
+					<a href="index.html">Home</a>
+				</div>
+				<div class="menu-item-secondary">
+					<a href="perks.html">Beneficios</a>
+				</div>
+				<div class="menu-item-secondary">
+					<a href="offices.html">Servicios para oficina</a>
+				</div>
+				<div class="menu-item-secondary">
+					<a href="cities.html">Cobertura</a>
+				</div>
+				<div class="menu-item-secondary">
+					<a href="us.html">Acerca de nosotros</a>
+				</div>
+      </div>
+      <div class="non-visible" id="rights">
+        Grupo MIRCRAVI S.A. de C.V. Todos los derechos reservados 2018.
+      </div>
+    </nav>
+
     <!-- Navigation bar -->
-    <nav class="navbar navbar-light bg-light fixed-top" style="background: #fff !important; height: 50px;" id="navbar">
+    <nav class="navbar navbar-light bg-light fixed-top navbar-custom" id="navbar-desk">
       <div class="container">
         <a class="navbar-brand" href="index.html">
-          <img src="res/assets/brand/logo/base.svg" height="32px" alt="Jelp Mi Logo">
+          <img src="res/assets/brand/logo/base.svg" height="32px" alt="Jelp Mi Logo" id="logotipo">
         </a>
+
         <div class="menu justify-content-end" style="height: 49px;">
           <a href="#">
             <div class="menu-item">
@@ -55,7 +108,7 @@
     <div class="container">
       <div class="row">
         <div class="col d-flex align-items-center color-text-white" style="height: 100vh;">
-          <div style="height: 80%; background-image: url('res/assets/img/photos/cover/us2.jpg'); background-size: cover; width: 100%; padding: 36px; box-shadow: 0px 24px 36px -22px rgba(144, 50, 200, 0.5);">
+          <div style="background-image: url('res/assets/img/photos/cover/us2.jpg'); background-size: cover; width: 100%; padding: 36px; box-shadow: 0px 24px 36px -22px rgba(144, 50, 200, 0.5);" class="hero-us">
             <div style="border: 16px solid white; padding: 36px; height: 100%;">
               <h1>Once you discover that you can... <br> you must.</h1>
             </div>
@@ -69,33 +122,32 @@
       </div>
     </div>
 
-
-    <div class="container-fluid" style="background: #fafafa; margin-top: 0px;">
-      <div class="row" style="height: 400px;">
-        <div class="col-md-6" style="background-image: url('res/assets/img/photos/ph-user-mom.jpg'); background-size: cover; background-position: center; background-repeat: no repeat;">
+		<div class="container-fluid" style="background: #fafafa; margin-top: 76px;">
+        <div class="row" style="min-height: 400px;">
+          <div class="col-md-6 photo-item" style="background-image: url('res/assets/img/photos/ph-user-mom.jpg');">
+          </div>
+          <div class="col-md-6 solid-85 color-text-white d-flex justify-content-center align-items-center">
+            <div class="wow fadeIn info-item ">
+              <h2 class="font-black">Misión<span>.</span></h2>
+							<p>
+								Creamos oportunidades para profesionales de la limpieza y usuarios mediante una manera más fácil y rápida de econtrar en quien confiar.
+							</p>
+            </div>
+          </div>
         </div>
-        <div class="col-md-6 solid-85 d-flex justify-content-center align-items-center color-text-white">
-          <div style="width: 80%;">
-            <h2 class="font-black">Misión<span>.</span></h2>
-            <p>
-              Creamos oportunidades para profesionales de la limpieza y usuarios mediante una manera más fácil y rápida de econtrar en quien confiar.
-            </p>
+        <div class="row" style="min-height: 400px;">
+          <div class="col-md-6 solid-10 d-flex align-items-center justify-content-center">
+            <div class="wow fadeIn info-item">
+              <h2 class="font-black">Visión<span>.</span></h2>
+							<p>
+								Ser la plataforma más utilizada en las principales ciudades del país por generar una experiencia positiva en el proceso de búsqueda de una persona confiable que pueda brindar un servicio de limpieza de alta calidad, además, de ser fuente de ingresos para millones de mexicanos que brindan servicios domésticos.
+							</p>
+            </div>
+          </div>
+          <div class="col-md-6 photo-item" style="background-image: url('res/assets/img/photos/ph-keeper-mom.jpg');">
           </div>
         </div>
       </div>
-      <div class="row" style="height: 400px;">
-        <div class="col-md-6 solid-10 d-flex align-items-center justify-content-center">
-          <div style="width: 80%;">
-            <h2 class="font-black">Visión<span>.</span></h2>
-            <p>
-              Ser la plataforma más utilizada en las principales ciudades del país por generar una experiencia positiva en el proceso de búsqueda de una persona confiable que pueda brindar un servicio de limpieza de alta calidad, además, de ser fuente de ingresos para millones de mexicanos que brindan servicios domésticos.
-            </p>
-          </div>
-        </div>
-        <div class="col-md-6" style="background-image: url('res/assets/img/photos/ph-keeper-mom.jpg'); background-size: cover; background-position: center; background-repeat: no repeat;">
-        </div>
-      </div>
-    </div>
 
     <div class="container">
       <div class="row">
@@ -202,12 +254,12 @@
     <div class="footer-custom">
       <div class="container">
         <div class="row">
-          <div class="col-md">
+          <div class="col-md" id="footer-logo">
             <a href="index.html">
               <img src="res/assets/brand/logo/silver.svg" height="45px" alt="Jelp Mi Logo">
             </a>
           </div>
-          <div class="col-md value">
+          <div class="col-md menu-column">
             <b class="color-text-disabled">Servicio</b>
             <br>
             <a href="index.html">Inicio</a>
@@ -220,7 +272,7 @@
             <br>
             <a href="cities.html">Ciudades</a>
           </div>
-          <div class="col-md value">
+          <div class="col-md menu-column">
             <b class="color-text-disabled">Empresa</b>
             <br>
             <a href="us.html">Nosotros</a>
@@ -229,15 +281,15 @@
             <br>
             <a href="https://medium.com/@jelpmi" target="_blank">Blog</a>
           </div>
-          <div class="col-md value">
+          <div class="col-md menu-column">
             <b class="color-text-disabled">Contacto</b>
             <br>
             <a href="mailto:contacto@jelpmi.mx">contacto@jelpmi.mx</a>
           </div>
-          <div class="col-md value">
+          <div class="col-md">
             <!-- empty div -->
           </div>
-          <div class="col-md text-right">
+          <div class="col-md text-right" id="stores">
             <a href="https://itunes.apple.com/mx/app/jelpmi/id1105721186?mt=8" target="_blank">
               <img src="res/assets/img/stores/app.png" style="width:140px; margin-bottom: 16px;" alt="App Store iOS">
             </a>
@@ -252,7 +304,7 @@
             </p>
           </div>
         </div>
-        <div class="row color-text-disabled" style="font-size: 14px;">
+        <div class="row color-text-disabled" style="font-size: 14px;" id="contact-info">
           <div style="margin-top: 30px; border-bottom: 1px solid #f0f0f0; width: 100%;" class="d-flex justify-content-between">
             <div>¿Necesitas más información? Llama en la CDMX al <a href="tel:70982559">7098-2559</a>. En Guadalajara al 2343-6162</div>
             <div>
@@ -276,6 +328,9 @@
         </div>
       </div>
     </div>
+
+		
+		<script src="res/js/menu.js"></script>
 
     <script type="text/javascript">
       $(window).scroll(function() {

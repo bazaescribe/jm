@@ -2,6 +2,8 @@
 <html>
   <head>
     <meta charset="utf-8">
+		<meta id="viewport" name="viewport" content ="width=device-width" />
+    <meta name="theme-color" content="#f0f0f0" />
     <title>jelpmi! - Cobertura</title>
     <link rel="shortcut icon" type="image/png" href="res/assets/icons/favicon.png"/>
 
@@ -26,12 +28,63 @@
 
   <body onload="sort()">
 
+    <!-- Mobile Menu -->
+		<nav class="navbar fixed-top container space-between navbar-mobile d-flex align-items-start" id="navbar-mobile">
+      <div class="d-flex justify-content-between align-items-center" style="width: 100%; display: flex">
+        <div id="burger-mobile" onclick="menu()">
+          <img src="res/assets/icons/menu.svg" alt="Burger menu" style="width: 40px;" id="burger-btn">
+          <img src="res/assets/brand/logo/globo.svg" height="32px" alt="Jelp Mi Logo" id="globo" class="svg logo-img">
+					<img src="res/assets/brand/logo/globo-w.svg" height="32px" alt="Jelp Mi Logo" id="globo-w" class="svg logo-img non-visible">
+        </div>
+        <div id="cta-mobile">
+					<a href="http://servicios.jelpmi.mx">
+						<img src="res/assets/icons/service.svg" height="32px;" id="cta-icon">
+					</a>
+        </div>
+      </div>
+      <div class="non-visible" id="menu-list" style="width: 100%;">
+        <div class="menu-item-main">
+					Iniciar sesión
+				</div>
+				<div class="menu-item-main" style="border-right: 3px solid #F223C6;">
+					<a href="keepers.html">Quiero trabajar</a>
+				</div>
+				<div class="menu-item-main" style="border-right: 3px solid #9032c8;">
+					Quiero un servicio
+				</div>
+				
+				<br>
+        <hr style="width: 100%; margin: 48px 0px;">
+				<br>
+				
+        <div class="menu-item-secondary">
+					<a href="index.html">Home</a>
+				</div>
+				<div class="menu-item-secondary">
+					<a href="perks.html">Beneficios</a>
+				</div>
+				<div class="menu-item-secondary">
+					<a href="offices.html">Servicios para oficina</a>
+				</div>
+				<div class="menu-item-secondary">
+					<a href="cities.html">Cobertura</a>
+				</div>
+				<div class="menu-item-secondary">
+					<a href="us.html">Acerca de nosotros</a>
+				</div>
+      </div>
+      <div class="non-visible" id="rights">
+        Grupo MIRCRAVI S.A. de C.V. Todos los derechos reservados 2018.
+      </div>
+    </nav>
+
     <!-- Navigation bar -->
-    <nav class="navbar navbar-light bg-light fixed-top" style="background: #fff !important; height: 50px;" id="navbar">
+    <nav class="navbar navbar-light bg-light fixed-top navbar-custom" id="navbar-desk">
       <div class="container">
         <a class="navbar-brand" href="index.html">
-          <img src="res/assets/brand/logo/base.svg" height="32px" alt="Jelp Mi Logo">
+          <img src="res/assets/brand/logo/base.svg" height="32px" alt="Jelp Mi Logo" id="logotipo">
         </a>
+
         <div class="menu justify-content-end" style="height: 49px;">
           <a href="#">
             <div class="menu-item">
@@ -51,27 +104,31 @@
         </div>
       </div>
     </nav>
-
+		
+		<!--Hero-->
     <div class="container">
-      <div class="row" style="height: 100vh;">
+      <div class="row section-hero" style="">
         <div class="col-md d-flex align-items-center justify-content-start">
-          <div style="width: 40%;">
-            <h1 class="font-black">Estamos donde lo necesitas<span>.</span></h1>
+          <div class="hero-text">
+            <h1 class="font-black">Estamos donde nos necesitas<span>.</span></h1>
             <p>
-               Tenmos la mejor cobertura en CDMX, Guadalajara y Monterrey, seguimos creciendo y muy pronto llegaremos a todo el país.
+              Tenmos la mejor cobertura en CDMX, Guadalajara y Monterrey, seguimos creciendo y muy pronto llegaremos a todo el país.
             </p>
           </div>
         </div>
+				<div class="col-md"></div>
       </div>
-      <div class="row" style="position: relative; top: -88vh; z-index: -1; height: 0px;">
+      <div class="row section-hero-image-container" style="">
         <div class="col-md-3">
         </div>
         <div class="col-md-9">
-          <div style="background-image: url('res/assets/img/photos/cover/cities.jpg'); height: 500px; background-size: cover;">
+          <div style="background-image: url('res/assets/img/photos/cover/cities.jpg');" class="section-hero-image">
+						<img src="res/assets/img/photos/cover/cities.jpg">
           </div>
         </div>
       </div>
     </div>
+
 
     <div class="container" id="cities">
     </div>
@@ -103,82 +160,85 @@
   -->
 
   <div class="footer-custom">
-    <div class="container">
-      <div class="row">
-        <div class="col-md">
-          <a href="index.html">
-            <img src="res/assets/brand/logo/silver.svg" height="45px" alt="Jelp Mi Logo">
-          </a>
-        </div>
-        <div class="col-md">
-          <b class="color-text-disabled">Servicio</b>
-          <br>
-          <a href="index.html">Inicio</a>
-          <br>
-          <a href="keepers.html">Ser keeper</a>
-          <br>
-          <a href="perks.html">Beneficios del servicio</a>
-          <br>
-          <a href="offices.html">Servicios para oficina</a>
-          <br>
-          <a href="cities.html">Ciudades</a>
-        </div>
-        <div class="col-md">
-          <b class="color-text-disabled">Empresa</b>
-          <br>
-          <a href="us.html">Nosotros</a>
-          <br>
-          <a href="equality.html">Políticas de igualdad</a>
-          <br>
-          <a href="https://medium.com/@jelpmi" target="_blank">Blog</a>
-        </div>
-        <div class="col-md">
-          <b class="color-text-disabled">Contacto</b>
-          <br>
-          <a href="mailto:contacto@jelpmi.mx">contacto@jelpmi.mx</a>
-        </div>
-        <div class="col-md">
-          <!-- empty div -->
-        </div>
-        <div class="col-md text-right">
-          <a href="https://itunes.apple.com/mx/app/jelpmi/id1105721186?mt=8" target="_blank">
-            <img src="res/assets/img/stores/app.png" style="width:140px; margin-bottom: 16px;" alt="App Store iOS">
-          </a>
-          <a href="https://play.google.com/store/apps/details?id=com.luillox.jelpmi&hl=es_419" target="_blank">
-            <img src="res/assets/img/stores/play.png" style="width:140px; margin-bottom: 16px;" alt="Google Play Store">
-          </a>
-
-          <p id="soul">
-            Hecho con <span>amor</span> en la
+      <div class="container">
+        <div class="row">
+          <div class="col-md" id="footer-logo">
+            <a href="index.html">
+              <img src="res/assets/brand/logo/silver.svg" height="45px" alt="Jelp Mi Logo">
+            </a>
+          </div>
+          <div class="col-md menu-column">
+            <b class="color-text-disabled">Servicio</b>
             <br>
-            <b>Ciudad de México</b>
-          </p>
+            <a href="index.html">Inicio</a>
+            <br>
+            <a href="keepers.html">Ser keeper</a>
+            <br>
+            <a href="perks.html">Beneficios del servicio</a>
+            <br>
+            <a href="offices.html">Servicios para oficina</a>
+            <br>
+            <a href="cities.html">Ciudades</a>
+          </div>
+          <div class="col-md menu-column">
+            <b class="color-text-disabled">Empresa</b>
+            <br>
+            <a href="us.html">Nosotros</a>
+            <br>
+            <a href="equality.html">Políticas de igualdad</a>
+            <br>
+            <a href="https://medium.com/@jelpmi" target="_blank">Blog</a>
+          </div>
+          <div class="col-md menu-column">
+            <b class="color-text-disabled">Contacto</b>
+            <br>
+            <a href="mailto:contacto@jelpmi.mx">contacto@jelpmi.mx</a>
+          </div>
+          <div class="col-md">
+            <!-- empty div -->
+          </div>
+          <div class="col-md text-right" id="stores">
+            <a href="https://itunes.apple.com/mx/app/jelpmi/id1105721186?mt=8" target="_blank">
+              <img src="res/assets/img/stores/app.png" style="width:140px; margin-bottom: 16px;" alt="App Store iOS">
+            </a>
+            <a href="https://play.google.com/store/apps/details?id=com.luillox.jelpmi&hl=es_419" target="_blank">
+              <img src="res/assets/img/stores/play.png" style="width:140px; margin-bottom: 16px;" alt="Google Play Store">
+            </a>
+
+            <p id="soul">
+              Hecho con <span>amor</span> en la
+              <br>
+              <b>Ciudad de México</b>
+            </p>
+          </div>
         </div>
-      </div>
-      <div class="row color-text-disabled" style="font-size: 14px;">
-        <div style="margin-top: 30px; border-bottom: 1px solid #f0f0f0; width: 100%;" class="d-flex justify-content-between">
-          <div>¿Necesitas más información? Llama en la CDMX al <a href="tel:70982559">7098-2559</a>. En Guadalajara al 2343-6162</div>
+        <div class="row color-text-disabled" style="font-size: 14px;" id="contact-info">
+          <div style="margin-top: 30px; border-bottom: 1px solid #f0f0f0; width: 100%;" class="d-flex justify-content-between">
+            <div>¿Necesitas más información? Llama en la CDMX al <a href="tel:70982559">7098-2559</a>. En Guadalajara al 2343-6162</div>
+            <div>
+              <a href="https://www.facebook.com/Jelpmimx/" target="_blank">
+                <img src="res/assets/icons/facebook.svg" class="social-icon" alt="Facebook">
+              </a>
+              <a href="https://twitter.com/jelpmimx" target="_blank">
+                <img src="res/assets/icons/twitter.svg" class="social-icon" alt="Twitter">
+              </a>
+              <a href="https://www.instagram.com/jelpmimx/" target="_blank">
+                <img src="res/assets/icons/instagram.svg" class="social-icon" alt="Instagram">
+              </a>
+              <a href="https://www.linkedin.com/company/16217519/" target="_blank">
+                <img src="res/assets/icons/linkedin.svg" class="social-icon" alt="Linkedin company page">
+              </a>
+          </div>
+          </div>
           <div>
-            <a href="https://www.facebook.com/Jelpmimx/" target="_blank">
-              <img src="res/assets/icons/facebook.svg" class="social-icon" alt="Facebook">
-            </a>
-            <a href="https://twitter.com/jelpmimx" target="_blank">
-              <img src="res/assets/icons/twitter.svg" class="social-icon" alt="Twitter">
-            </a>
-            <a href="https://www.instagram.com/jelpmimx/" target="_blank">
-              <img src="res/assets/icons/instagram.svg" class="social-icon" alt="Instagram">
-            </a>
-            <a href="https://www.linkedin.com/company/16217519/" target="_blank">
-              <img src="res/assets/icons/linkedin.svg" class="social-icon" alt="Linkedin company page">
-            </a>
-        </div>
-        </div>
-        <div>
-          Copyright © 2018 Grupo MIRCRAVI S.A. de C.V. Todos los derechos reservados.   <a href="privacy.html">Aviso de privacidad</a> | <a href="terms.html">Términos y condiciones</a> | <a href="sitemap.html">Mapa del sitio</a>
+            Copyright © 2018 Grupo MIRCRAVI S.A. de C.V. Todos los derechos reservados.   <a href="privacy.html">Aviso de privacidad</a> | <a href="terms.html">Términos y condiciones</a> | <a href="sitemap.html">Mapa del sitio</a>
+          </div>
         </div>
       </div>
     </div>
-  </div>
+
+		
+		<script src="res/js/menu.js"></script>
 
     <script type="text/javascript">
       $(window).scroll(function() {

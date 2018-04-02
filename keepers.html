@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>jelpmi! - Trabaja por tu cuenta</title>
+		<meta id="viewport" name="viewport" content ="width=device-width" />
+    <meta name="theme-color" content="#f0f0f0" />
     <link rel="shortcut icon" type="image/png" href="res/assets/icons/favicon.png"/>
 
     <link rel="stylesheet" href="res/css/bootstrap.min.css">
@@ -23,12 +25,63 @@
   </head>
   <body>
 
+    <!-- Mobile Menu -->
+		<nav class="navbar fixed-top container space-between navbar-mobile d-flex align-items-start" id="navbar-mobile">
+      <div class="d-flex justify-content-between align-items-center" style="width: 100%; display: flex">
+        <div id="burger-mobile" onclick="menu()">
+          <img src="res/assets/icons/menu.svg" alt="Burger menu" style="width: 40px;" id="burger-btn">
+          <img src="res/assets/brand/logo/globo.svg" height="32px" alt="Jelp Mi Logo" id="globo" class="svg logo-img">
+					<img src="res/assets/brand/logo/globo-w.svg" height="32px" alt="Jelp Mi Logo" id="globo-w" class="svg logo-img non-visible">
+        </div>
+        <div id="cta-mobile">
+					<a href="http://servicios.jelpmi.mx">
+						<img src="res/assets/icons/service.svg" height="32px;" id="cta-icon">
+					</a>
+        </div>
+      </div>
+      <div class="non-visible" id="menu-list" style="width: 100%;">
+        <div class="menu-item-main">
+					Iniciar sesión
+				</div>
+				<div class="menu-item-main" style="border-right: 3px solid #F223C6;">
+					<a href="keepers.html">Quiero trabajar</a>
+				</div>
+				<div class="menu-item-main" style="border-right: 3px solid #9032c8;">
+					Quiero un servicio
+				</div>
+				
+				<br>
+        <hr style="width: 100%; margin: 48px 0px;">
+				<br>
+				
+        <div class="menu-item-secondary">
+					<a href="index.html">Home</a>
+				</div>
+				<div class="menu-item-secondary">
+					<a href="perks.html">Beneficios</a>
+				</div>
+				<div class="menu-item-secondary">
+					<a href="offices.html">Servicios para oficina</a>
+				</div>
+				<div class="menu-item-secondary">
+					<a href="cities.html">Cobertura</a>
+				</div>
+				<div class="menu-item-secondary">
+					<a href="us.html">Acerca de nosotros</a>
+				</div>
+      </div>
+      <div class="non-visible" id="rights">
+        Grupo MIRCRAVI S.A. de C.V. Todos los derechos reservados 2018.
+      </div>
+    </nav>
+
     <!-- Navigation bar -->
-    <nav class="navbar navbar-light bg-light fixed-top" style="background: #fff !important; height: 50px;" id="navbar">
+    <nav class="navbar navbar-light bg-light fixed-top navbar-custom" id="navbar-desk">
       <div class="container">
         <a class="navbar-brand" href="index.html">
-          <img src="res/assets/brand/logo/base.svg" height="32px" alt="Jelp Mi Logo">
+          <img src="res/assets/brand/logo/base.svg" height="32px" alt="Jelp Mi Logo" id="logotipo">
         </a>
+
         <div class="menu justify-content-end" style="height: 49px;">
           <a href="#">
             <div class="menu-item">
@@ -49,10 +102,10 @@
       </div>
     </nav>
 
-    <div style="background-image: url('res/assets/img/photos/cover/keeper.jpg'); background-size: cover;">
-      <div style="width: 100%; height: 100%; background-image: linear-gradient(rgba(255, 255, 255, 0) 35% , rgba(255, 255, 255, 1) 70%); margin-bottom: 30px;">
+    <div style="background-image: url('res/assets/img/photos/cover/keeper.jpg'); background-size: cover; background-position: center;">
+      <div style="width: 100%; min-height: 100%; background-image: linear-gradient(rgba(255, 255, 255, 0) 35% , rgba(255, 255, 255, 1) 70%); margin-bottom: 30px;">
         <div class="container">
-          <div class="row" style="height: 90vh; margin-bottom: 111px;">
+          <div class="row keepers-moto" style="min-height: 90vh; margin-bottom: 111px;">
             <div class="col-lg-6 d-flex align-items-end">
               <h1>Comienza a cambiar tu vida<span>.</span></h1>
             </div>
@@ -96,30 +149,33 @@
                 </form>
               </div>
             </div>
-          </div>
-          <div class="row" style="margin-bottom: 48px;">
-            <div class="col-md-4">
-              <h3>¿Por qué unirse a Jelp Mi?</h3>
-              <p>
-                Somos la mejor plataforma de servicios de limpieza, encuentra miles de clientes en tu ciudad.
-              </p>
-            </div>
-            <div class="col-md-4">
-              <h3>Trabaja a tu ritmo.</h3>
-              <p>
-                Tu eliges tus días, horas y zonas de trabajo, así podrás trabajar sin descuidar lo más importante para ti.
-              </p>
-            </div>
-            <div class="col-md-4">
-              <h3>Estamos para ayudarte.</h3>
-              <p>
-                Existimos por y para ti, siempre podrás confiar en el equipo.
-              </p>
-            </div>
-          </div>
+					</div>
         </div>
       </div>
     </div>
+		
+		<div class="container">
+			<div class="row" style="margin-bottom: 48px;">
+				<div class="col-md-4">
+					<h3>¿Por qué unirse a Jelp Mi?</h3>
+					<p>
+						Somos la mejor plataforma de servicios de limpieza, encuentra miles de clientes en tu ciudad.
+					</p>
+				</div>
+				<div class="col-md-4">
+					<h3>Trabaja a tu ritmo.</h3>
+					<p>
+						Tu eliges tus días, horas y zonas de trabajo, así podrás trabajar sin descuidar lo más importante para ti.
+					</p>
+				</div>
+				<div class="col-md-4">
+					<h3>Estamos para ayudarte.</h3>
+					<p>
+						Existimos por y para ti, siempre podrás confiar en el equipo.
+					</p>
+				</div>
+			</div>
+		</div>
 
     <div class="container" style="margin-bottom: 40px;">
       <div class="row" style="margin-bottom: 50px;">
@@ -133,7 +189,7 @@
 
       <div class="row" style="margin-bottom: 40px;">
         <div class="col-md d-flex align-items-center">
-          <div class="d-flex">
+          <div class="d-flex info-item">
             <div style="margin-right: 10px;">
               <div class="bullet-big" style="background: #524C5B">
                 1
@@ -147,28 +203,32 @@
               <p>
                 Ciudad de México
                 <br>
-                <b style="font-size: 30px;">7098-2559</b>
+								<a href="tel:70982559">
+									<b style="font-size: 30px;">7098-2559</b>
+								</a>
               </p>
               <p>
                 Guadalajara
                 <br>
-                <b style="font-size: 30px;">2343-6162</b>
+								<a href="tel:23436162">
+                	<b style="font-size: 30px;">2343-6162</b>
+								</a>
               </p>
             </div>
           </div>
         </div>
-        <div class="col-md">
+        <div class="col-md step-photo">
           <div style="background-image: url('res/assets/img/photos/ph-capac-1.jpg'); background-size: cover; width: 100%; height: 400px;" class="wow fadeInUp">
           </div>
         </div>
       </div>
       <div class="row" style="margin-bottom: 40px;">
-        <div class="col-md">
+        <div class="col-md step-photo">
           <div style="background-image: url('res/assets/img/photos/ph-capac-2.jpg'); background-size: cover; width: 100%; height: 400px;" class="wow fadeInUp">
           </div>
         </div>
         <div class="col-md d-flex align-items-center">
-          <div class="d-flex">
+          <div class="d-flex info-item">
             <div class="" style="margin-right: 10px;">
               <div class="bullet-big" style="background: #F223C6">
                 2
@@ -187,7 +247,7 @@
       </div>
       <div class="row" style="margin-bottom: 40px;">
         <div class="col-md d-flex align-items-center">
-          <div class="d-flex">
+          <div class="d-flex info-item">
             <div style="margin-right: 10px;">
               <div class="bullet-big" style="background: #30AAF9">
                 3
@@ -208,18 +268,18 @@
             </div>
           </div>
         </div>
-        <div class="col-md">
+        <div class="col-md step-photo">
           <div style="background-image: url('res/assets/img/photos/ph-girl-desk.jpg'); background-size: cover; width: 100%; height: 400px;" class="wow fadeInUp">
           </div>
         </div>
       </div>
       <div class="row">
-        <div class="col-md">
+        <div class="col-md step-photo">
           <div style="background-image: url('res/assets/img/photos/ph-keeper-1.jpg'); background-size: cover; width: 100%; height: 400px;" class="wow fadeInUp">
           </div>
         </div>
         <div class="col-md d-flex align-items-center">
-          <div class="d-flex">
+          <div class="d-flex info-item">
             <div class="" style="margin-right: 10px;">
               <div class="bullet-big" style="background: #9032c8">
                 4
@@ -244,9 +304,9 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-md">
+          <div class="col-md step-photo">
             <div class="d-flex align-items-center" style="margin-bottom: 20px;">
-              <img src="res/assets/img/logos/icon-seguro.png" alt="" style="margin-right: 20px;">
+              <img src="res/assets/img/logos/icon-seguro.png" alt="" style="margin-right: 20px; height: 80px;">
               <h3>Seguro de gastos médicos.</h3>
             </div>
             <p>
@@ -255,7 +315,7 @@
           </div>
           <div class="col-md">
             <div class="d-flex align-items-center" style="margin-bottom: 20px;">
-              <img src="res/assets/img/logos/icon-horas.png" alt="" style="margin-right: 20px;">
+              <img src="res/assets/img/logos/icon-horas.png" alt="" style="margin-right: 20px; height: 80px;">
               <h3>Pago justo en tus servicios.</h3>
             </div>
             <p>
@@ -264,7 +324,7 @@
           </div>
           <div class="col-md">
             <div class="d-flex align-items-center" style="margin-bottom: 20px;">
-              <img src="res/assets/img/logos/icon-pagos.png" alt="" style="margin-right: 20px;">
+              <img src="res/assets/img/logos/icon-pagos.png" alt="" style="margin-right: 20px; height: 80px;">
               <h3>Depósitos semanales.</h3>
             </div>
             <p>
@@ -329,10 +389,10 @@
       </div>
     </div>
 
-    <div style="background: #7038F0;">
+    <div style="background: #7038F0; overflow: hidden;">
       <div class="container color-text-white" style="height: 100%">
         <div class="row">
-          <div class="col d-flex align-items-center">
+          <div class="col d-flex align-items-center info-item">
             <div>
               <h2>Únete ahora</h2>
               <p>
@@ -344,7 +404,7 @@
             </div>
           </div>
           <div class="col d-flex align-items-end" style="height: 400px;">
-            <img src="res/assets/img/jorge.png" alt="">
+            <img src="res/assets/img/jorge.png" alt="Keeper-registro" class="keeper-bottom">
           </div>
         </div>
       </div>
@@ -353,12 +413,12 @@
     <div class="footer-custom">
       <div class="container">
         <div class="row">
-          <div class="col-md">
+          <div class="col-md" id="footer-logo">
             <a href="index.html">
               <img src="res/assets/brand/logo/silver.svg" height="45px" alt="Jelp Mi Logo">
             </a>
           </div>
-          <div class="col-md">
+          <div class="col-md menu-column">
             <b class="color-text-disabled">Servicio</b>
             <br>
             <a href="index.html">Inicio</a>
@@ -371,7 +431,7 @@
             <br>
             <a href="cities.html">Ciudades</a>
           </div>
-          <div class="col-md">
+          <div class="col-md menu-column">
             <b class="color-text-disabled">Empresa</b>
             <br>
             <a href="us.html">Nosotros</a>
@@ -380,7 +440,7 @@
             <br>
             <a href="https://medium.com/@jelpmi" target="_blank">Blog</a>
           </div>
-          <div class="col-md">
+          <div class="col-md menu-column">
             <b class="color-text-disabled">Contacto</b>
             <br>
             <a href="mailto:contacto@jelpmi.mx">contacto@jelpmi.mx</a>
@@ -388,7 +448,7 @@
           <div class="col-md">
             <!-- empty div -->
           </div>
-          <div class="col-md text-right">
+          <div class="col-md text-right" id="stores">
             <a href="https://itunes.apple.com/mx/app/jelpmi/id1105721186?mt=8" target="_blank">
               <img src="res/assets/img/stores/app.png" style="width:140px; margin-bottom: 16px;" alt="App Store iOS">
             </a>
@@ -403,7 +463,7 @@
             </p>
           </div>
         </div>
-        <div class="row color-text-disabled" style="font-size: 14px;">
+        <div class="row color-text-disabled" style="font-size: 14px;" id="contact-info">
           <div style="margin-top: 30px; border-bottom: 1px solid #f0f0f0; width: 100%;" class="d-flex justify-content-between">
             <div>¿Necesitas más información? Llama en la CDMX al <a href="tel:70982559">7098-2559</a>. En Guadalajara al 2343-6162</div>
             <div>
@@ -428,6 +488,7 @@
       </div>
     </div>
 
+		<script src="res/js/menu.js"></script>
     <script src="res/js/wow.min.js"></script>
     <script>
       wow = new WOW(

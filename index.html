@@ -27,30 +27,50 @@
 
   <body>
 
-    <nav class="navbar fixed-top container space-between navbar-mobile d-flex align-items-start" id="navbar-mobile">
+    <!-- Mobile Menu -->
+		<nav class="navbar fixed-top container space-between navbar-mobile d-flex align-items-start" id="navbar-mobile">
       <div class="d-flex justify-content-between align-items-center" style="width: 100%; display: flex">
         <div id="burger-mobile" onclick="menu()">
           <img src="res/assets/icons/menu.svg" alt="Burger menu" style="width: 40px;" id="burger-btn">
-          <img src="res/assets/brand/logo/globo.svg" height="32px" alt="Jelp Mi Logo" id="globo">
+          <img src="res/assets/brand/logo/globo.svg" height="32px" alt="Jelp Mi Logo" id="globo" class="svg logo-img">
+					<img src="res/assets/brand/logo/globo-w.svg" height="32px" alt="Jelp Mi Logo" id="globo-w" class="svg logo-img non-visible">
         </div>
         <div id="cta-mobile">
-          Solicitar servicio
+					<a href="http://servicios.jelpmi.mx">
+						<img src="res/assets/icons/service.svg" height="32px;" id="cta-icon">
+					</a>
         </div>
       </div>
-      <div class="non-visible" id="menu-list">
-        <ul>
-          <li>Iniciar sesión</li>
-          <li>Iniciar sesión</li>
-          <li>Iniciar sesión</li>
-        </ul>
-        <hr>
-        <ul>
-          <li>Home</li>
-          <li>Beneficios</li>
-          <li>Servicios para oficina</li>
-          <li>Cobertura</li>
-          <li>Acerca de nosotros</li>
-        </ul>
+      <div class="non-visible" id="menu-list" style="width: 100%;">
+        <div class="menu-item-main">
+					Iniciar sesión
+				</div>
+				<div class="menu-item-main" style="border-right: 3px solid #F223C6;">
+					<a href="keepers.html">Quiero trabajar</a>
+				</div>
+				<div class="menu-item-main" style="border-right: 3px solid #9032c8;">
+					Quiero un servicio
+				</div>
+				
+				<br>
+        <hr style="width: 100%; margin: 48px 0px;">
+				<br>
+				
+        <div class="menu-item-secondary">
+					<a href="index.html">Home</a>
+				</div>
+				<div class="menu-item-secondary">
+					<a href="perks.html">Beneficios</a>
+				</div>
+				<div class="menu-item-secondary">
+					<a href="offices.html">Servicios para oficina</a>
+				</div>
+				<div class="menu-item-secondary">
+					<a href="cities.html">Cobertura</a>
+				</div>
+				<div class="menu-item-secondary">
+					<a href="us.html">Acerca de nosotros</a>
+				</div>
       </div>
       <div class="non-visible" id="rights">
         Grupo MIRCRAVI S.A. de C.V. Todos los derechos reservados 2018.
@@ -264,7 +284,7 @@
         </div>
         <div class="row color-text-disabled" style="font-size: 14px;" id="contact-info">
           <div style="margin-top: 30px; border-bottom: 1px solid #f0f0f0; width: 100%;" class="d-flex justify-content-between">
-            <div>¿Necesitas más información? Llama en la CDMX al <a href="tel:70982559">7098-2559</a>. En Guadalajara al 2343-6162</div>
+            <div>¿Necesitas más información? Llama en la CDMX al <a href="tel:70982559">7098-2559</a>. En Guadalajara al <a href="tel:23436162">2343-6162</a>.</div>
             <div>
               <a href="https://www.facebook.com/Jelpmimx/" target="_blank">
                 <img src="res/assets/icons/facebook.svg" class="social-icon" alt="Facebook">
@@ -296,6 +316,7 @@
           var imgID = $img.attr('id');
           var imgClass = $img.attr('class');
           var imgURL = $img.attr('src');
+					console.log("Hola???");
 
         jQuery.get(imgURL, function(data) {
             // Get the SVG tag, ignore the rest
