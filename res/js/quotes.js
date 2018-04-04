@@ -1,7 +1,7 @@
 function quotes(){
 	var testimonial = [
 		{
-			"quote": "Muy buen atención y servicio. Estamos muy contentos con la Sr Guadalupe.",
+			"quote": "Muy buena atención y servicio. Estamos muy contentos con la Sr Guadalupe.",
 			"name": "Adrián Campos",
 			"position": "Comunicación y Cultura",
 			"company": "Dentalia",
@@ -29,4 +29,6 @@ function quotes(){
 	document.getElementById('name').innerHTML = name;
 	document.getElementById('quote').innerHTML = quote;
 	document.getElementById('company').innerHTML = company;
+	document.getElementById('logo').innerHTML = "<img src='res/assets/img/logos/" + logo + "' style='width: 90%;'>";
+	
 }
