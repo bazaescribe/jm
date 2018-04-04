@@ -717,10 +717,6 @@ label{
 	text-decoration: none;
 }
 
-#globo path {
-  fill: #ff0;
-}
-
 #menu-list{
   color: white !important;
 }
@@ -758,10 +754,6 @@ label{
   padding: 16px 16px;
 }
 
-.logo-img path{
-	fill: red;
-}
-
 #burger-btn{
 	transition: all 0.3s ease;
 }
@@ -779,7 +771,7 @@ label{
 
 .keeper-cover{
 	background: grey;
-	background-image: url('../../assets/img/photos/cover/keeper.jpg');
+	background-image: url('../../assets/img/photos/cover/wes.jpg');
 	background-size: cover !important; 
 }
 

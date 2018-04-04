@@ -26,7 +26,7 @@
     <!-- End Alexa Certify Javascript -->
   </head>
 
-  <body onload="sort()">
+  <body onload="quotes()">
 
     <!-- Mobile Menu -->
 		<nav class="navbar fixed-top container space-between navbar-mobile d-flex align-items-start" id="navbar-mobile">
@@ -130,28 +130,26 @@
     </div>
 
     <div class="container-fluid solid-10" style="">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="testimonial d-flex align-items-center justify-content-center" style="min-height: 450px;">
-            <div class="logo" style="width: 300px;">
-              <img src="res/assets/img/logos/logo-greenpeace.png" style="width: 100%;" alt="Greenpeace México">
-            </div>
-            <div class="history color-text-disabled" style="padding: 66px;">
-              <p style="font-size: 22px;">
-                Estamos encantados con el servicio de JelpMi y
-                <br>
-                la limpieza ya nunca es una preocupación.
-              </p>
-              <p>
-                Gabriela Zamora
-                <br>
-                <span class="name-testimonial font-black">
-                  Facilities
-                </span>
-              </p>
-            </div>
-          </div>
-        </div>
+      <div class="row" style="min-height: 420px;">
+       <div class="col-md-6 d-flex align-items-center justify-content-center text-center" style="color: #524C5B; background-image: url('res/assets/img/quotation.png'); background-repeat: no-repeat; background-position: 10% 25%;">
+       	<div class="info-item">
+       		<p id="quote" style="font-size: 26px;">
+       			Aplausos a Jelpmi y a Laura nuestra querida keeper!! Tenerlos en nuestra oficina los hace parte de nuestra familia.
+       		</p>
+       		<p>
+       			<span id="name" style="color: #312D37 !important; font-size: 22px;">
+       				Susana Flores
+       			</span>
+       			<br>
+       			<span id="company">Correduria 81</span>
+       		</p>
+       	</div>
+       </div>
+       <div class="col-md-6 d-flex align-items-center justify-content-center">
+       	<div class="info-item" id="logo">
+       		<img src="res/assets/img/logos/logo-greenpeace.png" style="width: 100%;" alt="Greenpeace México">
+       	</div>
+       </div>
       </div>
     </div>
 
@@ -165,6 +163,7 @@
             <h2 class="font-black">Beneficios.</h2>
             <br>
             <ul>
+              <li>Profesionales evaluados y certificados por Jelp Mi!</li>
               <li>Manten a tu mismo keeper todo el tiempo que lo requieras.</li>
               <li>Precios especiales al contratar mensualmente.</li>
               <li>Regalos y promociones exclusivas para tus empleados.</li>
@@ -267,7 +266,7 @@
       </div>
     </div>
 
-		
+		<script src="res/js/quotes.js"></script>
 		<script src="res/js/menu.js"></script>
     <script type="text/javascript">
       $(window).scroll(function() {
