@@ -47,13 +47,13 @@ mixpanel.init("a2cc482f9ce47208919bd16343605dca");</script><!-- end Mixpanel -->
         </div>
       </div>
       <div class="non-visible" id="menu-list" style="width: 100%;">
-        <div class="menu-item-main">
+        <div class="menu-item-main" onclick="mixpanel.track('Iniciar sesión navbar');">
 					Iniciar sesión
 				</div>
-				<div class="menu-item-main" style="border-right: 3px solid #F223C6;">
+				<div class="menu-item-main" style="border-right: 3px solid #F223C6;" onclick="mixpanel.track('Quiero trabajar navbar');">
 					<a href="keepers.html">Quiero trabajar</a>
 				</div>
-				<div class="menu-item-main" style="border-right: 3px solid #9032c8;">
+				<div class="menu-item-main" style="border-right: 3px solid #9032c8;" onclick="mixpanel.track('Quiero un servicio navbar');">
 					<a href="http://servicios.jelpmi.mx">Quiero un servicio</a>
 				</div>
 				
@@ -91,17 +91,17 @@ mixpanel.init("a2cc482f9ce47208919bd16343605dca");</script><!-- end Mixpanel -->
 
         <div class="menu justify-content-end" style="height: 49px;">
           <a href="#">
-            <div class="menu-item">
+            <div class="menu-item" onclick="mixpanel.track('Iniciar sesión navbar');">
               Iniciar sesión
             </div>
           </a>
           <a href="keepers.html">
-            <div class="menu-item">
+            <div class="menu-item" onclick="mixpanel.track('Quiero trabajar navbar');">
               Quiero trabajar
             </div>
           </a>
           <a href="http://servicios.jelpmi.mx">
-            <div class="menu-item">
+            <div class="menu-item" onclick="mixpanel.track('Quiero un servicio navbar');">
               Quiero un servicio
             </div>
           </a>
