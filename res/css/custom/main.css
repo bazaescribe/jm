@@ -16,6 +16,10 @@ body{
   color: #312D37;
 }
 
+.quote{
+	font-family: "Pacifico";
+}
+
 h1{
   font-size: 48px;
   font-weight: 900;
@@ -149,6 +153,7 @@ hr {
   color: rgba(0, 0, 0, 0.7);
   border-bottom: 2px solid #F223C6;
   text-decoration: none;
+	font-weight: 900;
 }
 
 .menu a{
@@ -236,40 +241,6 @@ hr {
   background-position: center;
 }
 
-.btn-cta{
-  color: white;
-  font-size: 16px;
-  border: 0px solid lime;
-  border-radius: 50px !important;
-  box-shadow: 0px 0px 0px white;
-  transition: box-shadow 0.2s ease;
-  height: 45px;
-  padding: 4px 28px;
-	margin-bottom: 12px;
-}
-
-.bg-purple{
-  background-color: rgba(144, 50, 200, 1);
-}
-
-.bg-purple:hover{
-  background-color: rgba(173, 35, 255, 1);
-  box-shadow: 0px 0px 12px rgba(173, 35, 255, 0.7);
-}
-
-.bg-pink{
-  background-color: rgba(242, 35, 198, 1);
-}
-
-.bg-pink:hover{
-  background-color: rgba(255, 8, 244, 1);
-  box-shadow: 0px 0px 12px rgba(255, 8, 244, 0.7);
-}
-
-.btn-cta:focus{
-  outline:0;
-}
-
 .btn-main{
   background-color: #9032C8;
   color: white;
@@ -317,6 +288,7 @@ hr {
   padding: 0px 25px;
 }
 
+/*
 input[type="text"]{
   background: white;
   border: none;
@@ -329,9 +301,12 @@ input[type="text"]{
   transition: all 0.5s ease-in-out;
 }
 
+
 input[type="text"]:focus{
   border-bottom: 2px solid #F223C6;
 }
+
+*/
 
 label{
   font-size: 14px;
@@ -515,6 +490,10 @@ label{
   background-color: #F0F0F0;
   margin: 10px 0px;
   text-align: center;
+}
+
+.press-logos img{
+  margin-bottom: 40px;
 }
 
 .press-logos img{
@@ -773,6 +752,46 @@ label{
 	background: grey;
 	background-image: url('../../assets/img/photos/cover/keeper.jpg');
 	background-size: cover !important; 
+}
+
+.tile-row{
+	display: flex;
+	margin-bottom: 40px;
+}
+
+.tile{
+	width: 240px;
+	height: 88px;
+	border: 1px solid #F0F0F0;
+	display: flex;
+	font-weight: 900;
+	box-shadow: 0px 10px 16px -8px rgba(25, 23, 26, 0.2);
+	margin-right: 12px;
+	transition: all 0.4s ease;
+}
+
+.tile:hover{
+	transform: scale(1.04);
+	box-shadow: 0px 4px 12px 0px rgba(25, 23, 26, 0.1);
+}
+
+.tile .image{
+	background: gray;
+	width: 96px;
+	height: 100%;
+	background-size: cover;
+}
+
+.tile .description{
+	width: 138px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 8px;
+}
+
+.transparent-gradient{
+	background: linear-gradient(90deg, rgba(25,23,26,0.48) 0%, rgba(0,0,0,0) 100%);
 }
 
 @media only screen and (max-width: 550px){
